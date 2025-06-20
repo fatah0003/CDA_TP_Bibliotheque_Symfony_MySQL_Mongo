@@ -26,6 +26,10 @@
                     <td>
                         <a href="{{ path('app_book_show', {'id': book.id}) }}" class="btn btn-sm btn-info me-1">Show</a>
                         <a href="{{ path('app_book_edit', {'id': book.id}) }}" class="btn btn-sm btn-primary">Edit</a>
+                        <a href="{{ path('add_review', {'isbn': book.isbn}) }}" class="btn btn-sm btn-primary">
+                            Ajouter un commentaire
+                        </a>
+
                     </td>
                 </tr>
             {% else %}
