@@ -3,9 +3,13 @@
 {% block title %}New Book{% endblock %}
 
 {% block body %}
-    <h1>Create new Book</h1>
+    <div class="container mt-5">
+        <h1 class="mb-4 text-center">Create new Book</h1>
 
-    {{ include('book/_form.html.twig') }}
+        {{ include('book/_form.html.twig') }}
 
-    <a href="{{ path('app_book_index') }}">back to list</a>
+        <div class="mt-4 text-center">
+            <a href="{{ path('app_book_index') }}" class="btn btn-secondary">← Back to list</a>
+        </div>
+    </div>
 {% endblock %}
